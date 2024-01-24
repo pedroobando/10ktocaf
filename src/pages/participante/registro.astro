@@ -1,0 +1,17 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import NewRegister from '../../components/NewRegister.astro';
+---
+
+<BaseLayout
+    title="Registro"
+    description="Registro de participante en el evento"
+    image={{ src: '/public/hero.jpeg', alt: 'Registro de participante' }}
+    showHeader={false}
+>
+    <section>
+        <h1 class="mb-1 text-2xl leading-tight font-serif italic sm:mb-16 sm:text-4xl">Nuevo registro</h1>
+
+        <NewRegister />
+    </section>
+</BaseLayout>

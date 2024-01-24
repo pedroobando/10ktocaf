@@ -1,0 +1,25 @@
+---
+import Button from './Button.astro';
+import siteConfig from '../data/site-config';
+
+const subscribe = siteConfig.subscribe;
+
+const { class: className } = Astro.props;
+---
+
+{
+    subscribe?.formUrl && (
+        <section class:list={['px-1 py-1 flex flex-col items-center border border-dashed border-main text-center sm:px-12 sm:py-16', className]}>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf7lOsnvOxe41iBUYxvaXDGToXGJ3mcbST5fqt0O7veJezXkQ/viewform?embedded=true"
+                width="640"
+                height="1516"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+            >
+                Cargando…
+            </iframe>
+        </section>
+    )
+}

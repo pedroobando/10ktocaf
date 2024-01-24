@@ -40,10 +40,10 @@ export type SiteConfig = {
 const siteConfig: SiteConfig = {
     title: '10ktoCAF',
     subtitle: 'Necesita 10k para certificar en CAF',
-    description: 'Astro.js and Tailwind CSS theme for blog and portfolio by justgoodui.com',
+    description: 'Solo 10k nos separan de la inscripcion al maraton CAF',
     image: {
-        src: '/dante-preview.jpg',
-        alt: 'Dante - Astro.js and Tailwind CSS theme'
+        src: '/public/Maraton-CAF-2023.jpg',
+        alt: 'Certificacion para CAF'
     },
     headerNavLinks: [
         {
@@ -53,6 +53,10 @@ const siteConfig: SiteConfig = {
         {
             text: 'Articulos',
             href: '/projects'
+        },
+        {
+            text: 'Participante',
+            href: '/participante'
         },
         // {
         //     text: 'Blog',
@@ -99,13 +103,13 @@ const siteConfig: SiteConfig = {
         title: 'Solo 10K separan a muchos corredores poder registrarse en la CAF',
         text: "Estamos juntando mas de **100** personas para hacer un chequeo de 10K validado para la CAF, conocemos varias personas y algunos amigos que les falta un registro 10K para poderse inscribir en esta carrera. Asi puedas registrarte <a href='https://www.caf.com/es/especiales/maraton/'>#MARATON-CAF</a>.",
         image: {
-            src: '/hero01.jpeg',
-            alt: 'Una chica corriendo una carrera'
+            src: '/Maraton-CAF-2023.jpg',
+            alt: 'tu medalla para la caf'
         },
         actions: [
             {
-                text: 'Ponerse en contacto',
-                href: '/contact'
+                text: 'Registrase',
+                href: '/participante'
             }
         ]
     },
